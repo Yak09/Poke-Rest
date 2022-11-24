@@ -1,5 +1,4 @@
 const express = require("express");
-
 const cors = require('cors');
 const v1pokemonRouter = require("./v1/routes/pokemonRoutes");
 const morgan = require("morgan");
@@ -20,6 +19,7 @@ app.use(express.json());
 
 
 
-app.listen(PORT,()=>{console.log("Server runing")});
+app.listen(PORT,()=>{
+    console.log("Server runing")});
 
 
